@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Content Creation & Branding</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <img class="logo" src="./img/logo.png" alt="logo" />
+      <nav>
+        <ul class="navbar">
+          <li><a href="#home" class="active">Home</a></li>
+          <li>
+            <a href="javascript:void(0)" onclick="scrollToAbout()">About</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="scrollToServices()"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="scrollToProjects()"
+              >Projects</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </header>
+    <!-- BACKGROUND IMAGE -->
+    <div
+      id="home"
+      class="parallax-window"
+      data-parallax="scroll"
+      data-z-index="-100"
+      data-image-src="./img/background.jpg"
+    >
+      <h1 class="parallax-text">
+        <span style="color: #ec1839"
+          >Looking to make your business stand out?</span
+        ><br /><br />
+        We offer a wide range of content creation & branding services to help
+        you grow your business !
+      </h1>
+    </div>
+    <!-- ABOUT SECTION -->
+    <section class="section1">
+      <div class="header">
+        <h1 class="small-underline">About</h1>
+      </div>
+      <div class="container">
+        <img src="./img/about.jpg" />
+        <div>
+          <h2>Content Creation</h2>
+          <h2>&</h2>
+          <h2>Branding</h2>
+          <p>
+            This website is created to help you elevate your visual branding to
+            attract more clients.<span id="dots">...</span> <br /><span
+              id="more"
+              >We offer for you our best services in:<br />
+              <span class="item">o</span>Photography<br />
+              <span class="item">o</span> Filmmaking<br />
+              <span class="item">o</span>Video Editing<br />
+              <span class="item">o</span>Social Media Management
+            </span>
+          </p>
+          <button class="btn purple" type="button" id="read" onclick="read()">
+            Read More
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICES SECTION -->
+    <section class="section2">
+      <div class="header">
+        <h1 class="small-underline">Services</h1>
+      </div>
+      <div class="container">
+        <div class="division purple">
+          <i class="far fa-images"></i>
+          <h3>Photography</h3>
+          <p>For better image quality we're using our professional cameras.</p>
+        </div>
+        <div class="division purple">
+          <i class="fa fa-tasks"></i>
+          <h3>Social Media Managment</h3>
+          <p>
+            We use best technics to make your brand popular in social media.
+          </p>
+        </div>
+        <div class="division purple">
+          <i class="fa fa-film"></i>
+          <h3>Filmmaking</h3>
+          <p>We have a professional team to work on that.</p>
+        </div>
+        <div class="division purple">
+          <i class="fa fa-video"></i>
+          <h3>Video Editing</h3>
+          <p>We're using the latest versions of videos programms editors</p>
+        </div>
+      </div>
+    </section>
+    <!-- PROJECTS SECTION -->
+    <section class="section3">
+      <div class="title">
+        <h1 class="small-underline">Projects</h1>
+      </div>
+      <div class="container">
+        <div class="box"><img src="./img/1.jpg" /></div>
+        <div class="box"><img src="./img/2.jpg" /></div>
+        <div class="box"><img src="./img/3.jpg" /></div>
+        <div class="box"><img src="./img/4.jpg" /></div>
+        <div class="box"><img src="./img/5.jpg" /></div>
+        <div class="box"><img src="./img/6.jpg" /></div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="cont">
+        <div class="foot">
+          <h4>Contact Info</h4>
+          <p>street</p>
+          <p>city</p>
+          <p>Mobile phone</p>
+          <p>email</p>
+        </div>
+        <div class="foot">
+          <h4>Quick Links</h4>
+          <p><a href="#home">Home</a></p>
+          <p><a href="#">About</a></p>
+          <p><a href="#">Services</a></p>
+          <p><a href="#">Contact</a></p>
+        </div>
+        <div class="foot">
+          <h4>Follow Me</h4>
+          <ul class="icons">
+            <li>
+              <a href="https://github.com/ChaymaeBenayad" target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/chaymae-benayad-a229a8177"
+                target="_blank"
+                ><i class="fab fa-linkedin fa-2x"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">Copyright 2022©Developed by Chaymae Benayad</div>
+    </footer>
+    <!-- JAVASCRIPT FILES -->
+    <script
+      src="https://kit.fontawesome.com/fe54135c6b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
